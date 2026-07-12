@@ -150,6 +150,9 @@ p{margin:0}
 .splash-skip:hover{opacity:1}
 #splash.dismiss{opacity:0;visibility:hidden}
 #splash.dismiss .splash-stage{transform:scale(1.04);opacity:0}
+/* Tant que le splash est affiché : fond beige + contenu masqué => rien ne peut dépasser derrière le splash sur iOS */
+body.locked{background:#F3DFAF}
+body.locked #content{visibility:hidden}
 body.reveal-fast #splash{transition:opacity .5s ease}
 body.reveal-fast #splash.play .splash-logo,body.reveal-fast #splash.play .splash-word{transition-delay:0s}
 
